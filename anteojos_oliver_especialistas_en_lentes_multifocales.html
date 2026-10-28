@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anteojos Oliver | Especialistas en Lentes Multifocales en Ezeiza</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f4f3ff',
+                            100: '#ebe9fe',
+                            500: '#6366f1',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#1e1b4b',
+                            dark: '#0f172a'
+                        },
+                        limeBrand: {
+                            DEFAULT: '#84cc16',
+                            hover: '#65a30d'
+                        },
+                        wa: {
+                            DEFAULT: '#25D366',
+                            hover: '#1da851'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .wa-float-pulse {
+            animation: pulse-ring 2s infinite;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 50%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- HEADER STICKY -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-900 via-brand-700 to-indigo-500 flex items-center justify-center text-white text-xl shadow-md shadow-brand-900/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-glasses"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-brand-900 block leading-none">ANTEOJOS OLIVER</span>
+                        <span class="text-[10px] font-bold tracking-widest text-brand-500 uppercase">Ezeiza • Especialistas Multifocales</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-7 font-semibold text-slate-600 text-sm">
+                    <a href="#inicio" class="hover:text-brand-700 transition-colors">Inicio</a>
+                    <a href="#que-es" class="hover:text-brand-700 transition-colors">¿Qué es Multifocal?</a>
+                    <a href="#proceso" class="hover:text-brand-700 transition-colors">Pasos</a>
+                    <a href="#marcas" class="hover:text-brand-700 transition-colors">Sarkany & Cruiser</a>
+                    <a href="#garantia" class="hover:text-brand-700 transition-colors">Garantía & FAQ</a>
+                    <a href="#ubicacion" class="hover:text-brand-700 transition-colors">Ubicación</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/541123928321?text=Hola%20Oliver!%20Quiero%20asesoramiento%20por%20lentes%20multifocales" target="_blank" class="inline-flex items-center gap-2 bg-wa hover:bg-wa-hover text-white font-bold px-4 py-2.5 rounded-full text-sm shadow-md shadow-wa/20 transition-all hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span class="hidden sm:inline">Pedir Asesoramiento</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative bg-gradient-to-b from-brand-50/80 via-white to-slate-50 pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-100/80 border border-indigo-200/60 text-brand-900 text-xs font-bold tracking-wide">
+                        <i class="fa-solid fa-location-dot text-brand-500"></i>
+                        25 de Mayo 23, Ezeiza (A 2 cuadras de la estación)
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+                        Volvé a ver bien de <span class="gradient-text">cerca, lejos y distancia media</span> en un solo anteojo.
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Especialistas en <strong class="text-brand-900 font-semibold">Lentes Multifocales Digitales de alta precisión</strong> en Ezeiza. Trabajamos marcas exclusivas como <span class="font-semibold text-slate-900">Sarkany</span> y <span class="font-semibold text-slate-900">Cruiser</span> con <strong>Garantía Total de Adaptación</strong>.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="https://wa.me/541123928321?text=Hola%20Oliver!%20Quiero%20asesoramiento%20por%20lentes%20multifocales" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-wa hover:bg-wa-hover text-white font-bold px-7 py-4 rounded-2xl text-base shadow-lg shadow-wa/25 transition-all hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            Consultar por Multifocales
+                        </a>
+                        <button onclick="openBookingModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 text-white font-bold px-7 py-4 rounded-2xl text-base shadow-lg shadow-brand-900/20 transition-all hover:-translate-y-0.5">
+                            <i class="fa-regular fa-calendar-check text-lg"></i>
+                            Agendar Cita en el Local
+                        </button>
+                    </div>
+
+                    <!-- Estuches & Trust Badge -->
+                    <div class="pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-slate-600 text-xs font-semibold">
+                        <div class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                            Garantía de Adaptación 100%
+                        </div>
+                        <div class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="w-3 h-3 rounded-full bg-brand-500"></span>
+                            Cuotas Sin Interés
+                        </div>
+                        <div class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                            Estuche Exclusivo Anteojos Oliver
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Showcase (Real frames style) -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 bg-gradient-to-tr from-brand-500 via-indigo-400 to-lime-400 rounded-3xl blur-lg opacity-30"></div>
+                        
+                        <!-- Main Card Showcase -->
+                        <div class="relative bg-white p-4 rounded-3xl shadow-2xl border border-slate-100 space-y-4">
+                            
+                            <!-- Frame Highlight 1: Sarkany Collection -->
+                            <div class="relative bg-slate-100/80 rounded-2xl p-4 overflow-hidden group">
+                                <span class="absolute top-3 left-3 z-10 bg-pink-500 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md tracking-wider shadow-sm">Colección Sarkany</span>
+                                <div class="h-48 w-full flex items-center justify-center relative">
+                                    <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=700&q=80" alt="Armazones Sarkany traslúcidos" class="object-cover h-full w-full rounded-xl group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <div class="mt-2 flex items-center justify-between text-xs font-bold text-slate-800">
+                                    <span>Armazones Hexagonales & Cat-Eye</span>
+                                    <span class="text-pink-600 bg-pink-50 px-2 py-0.5 rounded">Tono Rosa & Azul</span>
+                                </div>
+                            </div>
+
+                            <!-- Real Cases Visual Bar (Purple, Blue, Pink, Lime) -->
+                            <div class="bg-gradient-to-r from-purple-100 via-blue-100 via-pink-100 to-lime-100 p-3 rounded-2xl border border-slate-200/60 flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-box-open text-brand-900 text-lg"></i>
+                                    <div>
+                                        <p class="text-xs font-bold text-slate-900 leading-none">Estuches Oficiales Oliver</p>
+                                        <p class="text-[10px] text-slate-600">En colores violeta, azul, rosa y lima con cada anteojo.</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-black text-brand-900 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-lg">INCLUIDO</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CONFIANZA -->
+    <section class="bg-brand-900 text-white py-10 border-y border-brand-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-brand-800/80">
+                <div class="pt-4 md:pt-0 px-2">
+                    <i class="fa-solid fa-bullseye text-3xl text-indigo-300 mb-2"></i>
+                    <h3 class="font-bold text-base">Centración Digital</h3>
+                    <p class="text-xs text-indigo-200/80 mt-1">Medición de pupila exacta para que no sientas mareos.</p>
+                </div>
+                <div class="pt-4 md:pt-0 px-2">
+                    <i class="fa-solid fa-shield-heart text-3xl text-emerald-400 mb-2"></i>
+                    <h3 class="font-bold text-base">Garantía de Adaptación</h3>
+                    <p class="text-xs text-indigo-200/80 mt-1">Si no te adaptás, reajustamos tus cristales sin costo extra.</p>
+                </div>
+                <div class="pt-4 md:pt-0 px-2">
+                    <i class="fa-solid fa-award text-3xl text-amber-300 mb-2"></i>
+                    <h3 class="font-bold text-base">Marcas Oficiales</h3>
+                    <p class="text-xs text-indigo-200/80 mt-1">Sarkany, Cruiser y armazones metálicos de alta calidad.</p>
+                </div>
+                <div class="pt-4 md:pt-0 px-2">
+                    <i class="fa-solid fa-credit-card text-3xl text-indigo-300 mb-2"></i>
+                    <h3 class="font-bold text-base">Financiación Fácil</h3>
+                    <p class="text-xs text-indigo-200/80 mt-1">Cuotas sin interés y promociones bancarias vigentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION EDUCATIVA: ¿QUE ES Y PARA QUIEN ES MULTIFOCAL? (Estilo Numag) -->
+    <section id="que-es" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-700 bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-100">
+                    Guía completa de Lentes Multifocales
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-4">
+                    ¿Qué son los Lentes Multifocales y por qué los necesitas?
+                </h2>
+                <p class="text-slate-600 mt-3 text-base leading-relaxed">
+                    A partir de los 40 años el cristalino del ojo pierde elasticidad (presbicia). Los lentes multifocales integran 3 campos de visión en una sola lente continua sin líneas molestas.
+                </p>
+            </div>
+
+            <!-- Visual 3 Campos de Visión -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 relative hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-900 text-white flex items-center justify-center font-bold text-xl mb-6 shadow-md">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
+                    <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Zona Superior</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Visión de Lejos</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Para manejar, mirar televisión, caminar o ver paisajes sin necesidad de bajarse ni quitarse los anteojos.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 relative hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-700 text-white flex items-center justify-center font-bold text-xl mb-6 shadow-md">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Zona Intermedia</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Distancia Media</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Optimizada para trabajar con la computadora, ver el tablero del auto o conversar mirando a los ojos a las personas.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 relative hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-500 text-white flex items-center justify-center font-bold text-xl mb-6 shadow-md">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Zona Inferior</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Visión de Cerca</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Ideal para leer un libro, mirar mensajes en el celular o trabajar con las manos de forma cómoda y continua.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Comparison Table / Card: Antes vs Con Multifocales Oliver -->
+            <div class="bg-gradient-to-r from-slate-900 to-brand-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+                <div class="grid lg:grid-cols-2 gap-8 items-center relative z-10">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-indigo-300 bg-white/10 px-3 py-1 rounded-full">Comparativa Práctica</span>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold mt-4">¿Por qué decirle adiós a tener 2 anteojos distintos?</h3>
+                        <p class="text-indigo-200 text-sm mt-3 leading-relaxed">
+                            Antes tenías que cambiarte constantemente entre el anteojo para leer y el anteojo para caminar. Con los multifocales digitales de Anteojos Oliver tenés todo resuelto en una sola montura elegante.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 rounded-2xl bg-white/10 border border-white/10">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-xmark text-red-400 text-xl"></i>
+                                <span class="text-sm font-medium">Lentes Comunes: Vivir sacándote y poniéndote el anteojo.</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 rounded-2xl bg-emerald-500/20 border border-emerald-400/40">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400 text-xl"></i>
+                                <span class="text-sm font-bold">Multifocales Oliver: Un solo anteojo para todo tu día.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PASOS DE ASESORAMIENTO PERSONALIZADO -->
+    <section id="proceso" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-100/80 px-3.5 py-1.5 rounded-full">Proceso Simple & Claro</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+                    Tu camino hacia tus nuevos multifocales
+                </h2>
+                <p class="text-slate-600 mt-2">En solo 4 pasos sin complicaciones en nuestro local de Ezeiza.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm relative group hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-900 text-white font-black text-xl flex items-center justify-center mb-5 shadow-md">
+                        1
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Traé tu Receta</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Vení a <strong>25 de Mayo 23 (Ezeiza)</strong> o envianos una foto clara de tu receta por WhatsApp para un presupuesto previo.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm relative group hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-700 text-white font-black text-xl flex items-center justify-center mb-5 shadow-md">
+                        2
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Elegí tu Armazón</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Probate las colecciones exclusivas de <strong>Sarkany</strong>, <strong>Cruiser</strong> o diseños metálicos livianos en nuestro local.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm relative group hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500 text-white font-black text-xl flex items-center justify-center mb-5 shadow-md">
+                        3
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Centración Exacta</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Tomamos las medidas de tu distancia pupilar e inclinación para garantizar que el foco de la lente quede perfecto en tu pupila.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm relative group hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white font-black text-xl flex items-center justify-center mb-5 shadow-md">
+                        4
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Retirás con Garantía</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Te entregamos tus anteojos con su estuche original y la tranquilidad de nuestra <strong>Garantía de Adaptación Total</strong>.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MARCAS & GALERIA DE MODELOS -->
+    <section id="marcas" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-700 bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-100">
+                    Marcas Destacadas en Local
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+                    Armazones listos para tus cristales Multifocales
+                </h2>
+                <p class="text-slate-600 mt-2">
+                    Modelos en acetato de color, siluetas redondeadas, hexagonales, cat-eye y metal ultra liviano.
+                </p>
+            </div>
+
+            <!-- Brands Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Brand Card 1: Sarkany -->
+                <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-lg transition-all group">
+                    <div class="relative h-64 bg-slate-200 overflow-hidden">
+                        <span class="absolute top-4 left-4 z-10 bg-pink-600 text-white text-xs font-extrabold uppercase px-3 py-1 rounded-lg tracking-wider">
+                            SARKANY
+                        </span>
+                        <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=700&q=80" alt="Colección Sarkany Anteojos Oliver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900">Sarkany - Tendencia & Color</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Armazones de acetato traslúcido en tonos rosa, azul, verde agua y formatos hexagonales / cat-eye con personalidad.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between">
+                            <span class="text-xs font-bold text-brand-700">Aptos Multifocal</span>
+                            <a href="https://wa.me/541123928321?text=Hola%20Oliver!%20Quiero%20consultar%20modelos%20de%20Sarkany%20para%20multifocales" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-extrabold text-wa hover:text-wa-hover">
+                                Consultar modelos <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brand Card 2: Cruiser -->
+                <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-lg transition-all group">
+                    <div class="relative h-64 bg-slate-200 overflow-hidden">
+                        <span class="absolute top-4 left-4 z-10 bg-brand-900 text-white text-xs font-extrabold uppercase px-3 py-1 rounded-lg tracking-wider">
+                            CRUISER
+                        </span>
+                        <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=700&q=80" alt="Colección Cruiser Anteojos Oliver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900">Cruiser - Elegancia Urbana</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Diseños modernos rectangulares y redondeados en tonos azul mate, gris humo y acabados sobrios para hombre y unisex.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between">
+                            <span class="text-xs font-bold text-brand-700">Aptos Multifocal</span>
+                            <a href="https://wa.me/541123928321?text=Hola%20Oliver!%20Quiero%20consultar%20modelos%20de%20Cruiser%20para%20multifocales" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-extrabold text-wa hover:text-wa-hover">
+                                Consultar modelos <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brand Card 3: Metal & Delgados -->
+                <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-lg transition-all group">
+                    <div class="relative h-64 bg-slate-200 overflow-hidden">
+                        <span class="absolute top-4 left-4 z-10 bg-amber-600 text-white text-xs font-extrabold uppercase px-3 py-1 rounded-lg tracking-wider">
+                            METAL ULTRA LIVIANO
+                        </span>
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=700&q=80" alt="Línea Metal Delgado Anteojos Oliver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900">Línea Metal Delgados</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Monturas metálicas doradas, plateadas y peltre ultra livianas con plaquetas siliconadas regulables para máxima comodidad.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between">
+                            <span class="text-xs font-bold text-brand-700">Aptos Multifocal</span>
+                            <a href="https://wa.me/541123928321?text=Hola%20Oliver!%20Quiero%20consultar%20modelos%20metálicos%20para%20multifocales" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-extrabold text-wa hover:text-wa-hover">
+                                Consultar modelos <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GARANTIA & FAQ INTERACTIVO -->
+    <section id="garantia" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">Tranquilidad Total</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+                    Preguntas Frecuentes & Garantía
+                </h2>
+                <p class="text-slate-600 mt-2">Todo lo que necesitás saber antes de encargar tus multifocales.</p>
+            </div>
+
+            <!-- Accordion Items -->
+            <div class="space-y-4" id="faq-accordion">
+                
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(1)" class="w-full p-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 focus:outline-none">
+                        <span class="text-base">¿Qué pasa si no me adapto a mis lentes multifocales?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand-500 transition-transform"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        En <strong>Anteojos Oliver</strong> tenés <strong>Garantía Total de Adaptación</strong>. Si dentro del período inicial sentís alguna incomodidad o no te acostumbrás, revisamos el centrado y realizamos la corrección o cambio de cristales sin cargo.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(2)" class="w-full p-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 focus:outline-none">
+                        <span class="text-base">¿Aceptan recetas de cualquier oftalmólogo?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand-500 transition-transform"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Sí, podés traer la receta de cualquier médico oftalmólogo u hospital. Nos encargamos de interpretar exactamente las dioptrías y la adición para que tu multifocal quede impecable.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 focus:outline-none">
+                        <span class="text-base">¿Cuánto demoran en estar listos mis anteojos?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand-500 transition-transform"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Al ser cristales de calibración digital y personalizada, el proceso habitual demora entre 5 y 8 días hábiles. Te avisamos directamente por WhatsApp en cuanto estén listos para retirar.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(4)" class="w-full p-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 focus:outline-none">
+                        <span class="text-base">¿Tienen promociones y cuotas sin interés?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-brand-500 transition-transform"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Contamos con opciones de financiación en cuotas sin interés con tarjetas de crédito y descuentos especiales por pago en efectivo o transferencia. Consultanos por las promociones del mes.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- UBICACION Y HORARIOS -->
+    <section id="ubicacion" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-700 bg-brand-50 px-3.5 py-1.5 rounded-full">Local Comercial</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Vení a probarte tus anteojos en Ezeiza
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Te esperamos en nuestro local atendido con la dedicación de siempre.
+                    </p>
+
+                    <div class="space-y-4 text-sm border-t border-slate-100 pt-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-9 h-9 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">Dirección:</strong>
+                                <span class="text-slate-600">25 de Mayo 23, Ezeiza, Prov. de Buenos Aires.<br><small class="text-brand-700 font-semibold">(A 2 cuadras de la estación de trenes)</small></span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">WhatsApp / Teléfono:</strong>
+                                <a href="https://wa.me/541123928321" class="text-brand-900 font-bold hover:underline">11 23928321</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-9 h-9 rounded-xl bg-pink-50 text-pink-600 flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">Instagram:</strong>
+                                <a href="https://instagram.com/anteojosoliver" target="_blank" class="text-slate-600 hover:text-pink-600 font-medium">@anteojosoliver</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <a href="https://maps.google.com/?q=25+de+Mayo+23+Ezeiza" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-md">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            Abrir en Google Maps
+                        </a>
+                        <button onclick="openBookingModal()" class="inline-flex items-center gap-2 bg-brand-100 hover:bg-brand-200 text-brand-900 font-bold px-5 py-3 rounded-xl text-sm transition-all">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            Agendar Cita
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Map Frame -->
+                <div class="lg:col-span-7 h-[380px] bg-slate-100 rounded-3xl overflow-hidden border border-slate-200 relative shadow-inner">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.877855638101!2d-58.52840000000001!3d-34.853000000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd0be01010101%3A0x0!2s25+de+Mayo+23%2C+Ezeiza!5e0!3m2!1ses!2sar!4v1600000000000!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center text-white text-lg">
+                            <i class="fa-solid fa-glasses"></i>
+                        </div>
+                        <span class="text-lg font-extrabold text-white">ANTEOJOS OLIVER</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Especialistas en Lentes Multifocales Digitales en Ezeiza. Marcas oficiales Sarkany, Cruiser y armazones de diseño.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="#que-es" class="hover:text-white transition-colors">¿Qué es Multifocal?</a></li>
+                        <li><a href="#proceso" class="hover:text-white transition-colors">Pasos</a></li>
+                        <li><a href="#marcas" class="hover:text-white transition-colors">Sarkany & Cruiser</a></li>
+                        <li><a href="#ubicacion" class="hover:text-white transition-colors">Ubicación</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Contacto Ezeiza</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><i class="fa-solid fa-location-dot text-brand-500 mr-2"></i> 25 de Mayo 23, Ezeiza</li>
+                        <li><i class="fa-brands fa-whatsapp text-wa mr-2"></i> 11 23928321</li>
+                        <li><i class="fa-brands fa-instagram text-pink-500 mr-2"></i> @anteojosoliver</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Atención Presencial</h4>
+                    <p class="text-xs text-slate-400">Lunes a Viernes:<br><strong class="text-white">09:00 a 19:00 hs</strong></p>
+                    <p class="text-xs text-slate-400 mt-2">Sábados:<br><strong class="text-white">09:00 a 13:30 hs</strong></p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>© 2026 Anteojos Oliver. Todos los derechos reservados.</p>
+                <p class="text-[11px]">Ezeiza, Provincia de Buenos Aires, Argentina.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTON FLOTANTE DE WHATSAPP CON MENSAJE FORMATAEADO -->
+    <a href="https://wa.me/541123928321?text=Hola%20Oliver!%20Quiero%20asesoramiento%20por%20lentes%20multifocales" target="_blank" class="fixed bottom-6 right-6 z-50 bg-wa hover:bg-wa-hover text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl wa-float-pulse transition-transform hover:scale-110" title="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- MODAL AGENDAR CITA -->
+    <div id="booking-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative">
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-brand-100 text-brand-900 rounded-2xl flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900">Agendar Cita en Ezeiza</h3>
+                <p class="text-xs text-slate-500 mt-1">25 de Mayo 23, Ezeiza</p>
+            </div>
+
+            <form id="booking-form" onsubmit="sendBookingToWhatsApp(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nombre Completo</label>
+                    <input type="text" id="modal-name" required placeholder="Ej: Juan Pérez" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Tipo de Consulta</label>
+                    <select id="modal-service" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+                        <option value="Lentes Multifocales">Lentes Multifocales (Asesoramiento)</option>
+                        <option value="Armazones Sarkany">Armazones Sarkany</option>
+                        <option value="Armazones Cruiser">Armazones Cruiser</option>
+                        <option value="Anteojos Recetados Comunes">Anteojos Recetados Comunes</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Día Preferido</label>
+                        <input type="date" id="modal-date" required class="w-full px-3 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Horario</label>
+                        <select id="modal-time" class="w-full px-3 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+                            <option value="Mañana (9:00 a 12:00)">Mañana</option>
+                            <option value="Tarde (15:00 a 19:00)">Tarde</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-wa hover:bg-wa-hover text-white font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg shadow-wa/20 transition-all mt-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    Confirmar por WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // FAQ Accordion
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Modal Logic
+        function openBookingModal() {
+            document.getElementById('booking-modal').classList.remove('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('booking-modal').classList.add('hidden');
+        }
+
+        function sendBookingToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('modal-name').value;
+            const service = document.getElementById('modal-service').value;
+            const date = document.getElementById('modal-date').value;
+            const time = document.getElementById('modal-time').value;
+
+            const message = `Hola Oliver! Quiero agendar una cita.%0A%0A*Nombre:* ${encodeURIComponent(name)}%0A*Consulta:* ${encodeURIComponent(service)}%0A*Día:* ${encodeURIComponent(date)}%0A*Horario preferido:* ${encodeURIComponent(time)}`;
+            const waUrl = `https://wa.me/541123928321?text=${message}`;
+
+            window.open(waUrl, '_blank');
+            closeBookingModal();
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('booking-modal');
+            if (event.target === modal) {
+                closeBookingModal();
+            }
+        }
+    </script>
+</body>
+</html>
